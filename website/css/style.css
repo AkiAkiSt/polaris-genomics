@@ -78,7 +78,7 @@ nav .cta:hover{background:var(--ink);color:#fff}
 @keyframes pulse{0%,100%{opacity:.5;transform:scale(.9)}50%{opacity:1;transform:scale(1.15)}}
 
 /* ---- sections ---- */
-section{padding:clamp(3.4rem,7vw,6rem) 0;position:relative}
+section{padding:clamp(3.4rem,7vw,6rem) 0;position:relative;scroll-margin-top:68px}
 section.band{background:var(--paper2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 section.dark{background:linear-gradient(180deg,#0b1f3a,#0e2440);color:#dfeaf5}
 section.dark h2,section.dark h3{color:#fff}
