@@ -1,0 +1,36 @@
+# secrets — NEVER commit
+.env
+.env.*
+*.key
+secrets.*
+
+# large / regenerable data (cached public-API responses, downloaded binaries)
+data/cache/
+data/external/
+data/raw/
+
+# tectonic / latex build artifacts
+manuscript/tec_log.txt
+manuscript/tec_out.txt
+manuscript/tec_err.txt
+explainer/tec_log.txt
+*.aux
+*.bbl
+*.blg
+*.out
+*.fls
+*.fdb_latexmk
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# os / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# scratch
+pdf_extracted_text.txt

@@ -1,0 +1,22 @@
+{
+  "conservation_auc": 0.866,
+  "conservation_p": 0.00045336264698801325,
+  "rarity_auc": 0.317,
+  "rarity_p": 0.07908817992118188,
+  "em_reliability": {
+    "motif_motif_disruption": 0.002,
+    "phylop_max": 0.664,
+    "phastcons470": 0.164,
+    "ccre_enhancer": 0.169,
+    "splice_delta": 0.001
+  },
+  "gene_top1_L2G": 0.833,
+  "gene_top1_nearest": 0.667,
+  "n_control_loci": 6,
+  "n_loci": 14,
+  "n_variants": 260,
+  "SORT1_top_TF": "TFAP2E",
+  "SORT1_dLLR": -15.37,
+  "PHACTR1_top_TF": "MEF2B",
+  "PHACTR1_dLLR": -13.7
+}

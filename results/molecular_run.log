@@ -1,0 +1,34 @@
+loaded 879 PWMs; annotating 569 variants
+  [25/569] 36s (1.42s/var) last=KLF14
+  [50/569] 116s (2.31s/var) last=KLF14
+  [75/569] 157s (2.09s/var) last=IGF2BP2
+  [100/569] 187s (1.87s/var) last=IGF2BP2
+  [125/569] 219s (1.75s/var) last=CDKAL1
+  [150/569] 260s (1.73s/var) last=THADA
+  [175/569] 322s (1.84s/var) last=THADA
+[cache] retry 1/4 gnomad.broadinstitute.org (HTTPSConnectionPool(host='gnomad.broadinstitute.org', port=443): Read timed out.) wait 1.5s
+  [200/569] 435s (2.18s/var) last=THADA
+[cache] retry 1/4 gnomad.broadinstitute.org (HTTPSConnectionPool(host='gnomad.broadinstitute.org', port=443): Read timed out.) wait 1.5s
+  [225/569] 535s (2.38s/var) last=THADA
+  [250/569] 599s (2.39s/var) last=THADA
+  [275/569] 633s (2.30s/var) last=THADA
+  [300/569] 667s (2.22s/var) last=HHEX_IDE
+  [325/569] 702s (2.16s/var) last=NOTCH2
+  [350/569] 740s (2.11s/var) last=TP53INP1
+  [375/569] 774s (2.06s/var) last=TP53INP1
+  [400/569] 815s (2.04s/var) last=PRC1
+  [425/569] 861s (2.02s/var) last=TLE1
+  [450/569] 892s (1.98s/var) last=MAEA
+  [475/569] 928s (1.95s/var) last=MAEA
+  [500/569] 960s (1.92s/var) last=MAEA
+  [525/569] 994s (1.89s/var) last=MAEA
+  [550/569] 1029s (1.87s/var) last=MAEA
+  [569/569] 1070s (1.88s/var) last=MAEA
+C:\Users\Aki\OneDrive\Aki\Vs code\Carnegie Mellon\fp_test\scripts\03_molecular_effect.py:44: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  print(f"ref-base concordance: {ok.fillna(False).mean():.1%}")
+
+saved molecular_features.csv ((569, 36)) + motif_records.json
+ref-base concordance: 93.1%
+mean motif_disruption: 11.68
+variants in a cCRE: 81
+median phyloP100: -0.309

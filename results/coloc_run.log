@@ -1,0 +1,10 @@
+IGF2BP2        -> IGF2BP2  insufficient overlap
+CDKAL1         -> CDKAL1   insufficient overlap
+KLF14          -> KLF14    insufficient overlap
+THADA          -> THADA    insufficient overlap
+JAZF1          -> JAZF1    insufficient overlap
+TP53INP1       -> TP53INP1 insufficient overlap
+HHEX_IDE       -> HHEX     insufficient overlap
+ARAP1_CENTD2   -> STARD10  insufficient overlap
+
+saved real_coloc.csv (0 locus-tissue tests, 0 loci colocalized)

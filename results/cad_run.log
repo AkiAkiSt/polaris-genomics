@@ -1,0 +1,38 @@
+  SORT1        cs=68 members=6 L2G=SORT1 (35s)
+  PHACTR1      cs=81 members=1 L2G=PHACTR1 (39s)
+  CDKN2B_AS1   cs=29 members=17 L2G=CDKN2B (70s)
+  PCSK9        cs=3 members=3 L2G=PCSK9 (75s)
+  LDLR         cs=57 members=41 L2G=LDLR (146s)
+  LPA          cs=89 members=3 L2G=LPA (155s)
+  HDAC9        cs=51 members=2 L2G=HDAC9 (160s)
+  PLPP3        cs=35 members=15 L2G=PLPP3 (193s)
+  CXCL12       cs=6 members=130 L2G=CXCL12 (457s)
+  LIPA         cs=31 members=7 L2G=LIPA (469s)
+  GUCY1A1      cs=37 members=10 L2G=GUCY1A1 (487s)
+  IL6R         cs=15 members=21 L2G=IL6R (522s)
+  CDKN2B_AS1b  cs=60 members=2 L2G=CDKN2B (527s)
+  UBE2Z        cs=3 members=2 L2G=RAI1 (531s)
+
+=== CAD generalization metrics ===
+{
+  "conservation_auc": 0.866,
+  "conservation_p": 0.00045336264698801325,
+  "rarity_auc": 0.317,
+  "rarity_p": 0.07908817992118188,
+  "em_reliability": {
+    "motif_motif_disruption": 0.002,
+    "phylop_max": 0.664,
+    "phastcons470": 0.164,
+    "ccre_enhancer": 0.169,
+    "splice_delta": 0.001
+  },
+  "gene_top1_L2G": 0.833,
+  "gene_top1_nearest": 0.667,
+  "n_control_loci": 6,
+  "n_loci": 14,
+  "n_variants": 260,
+  "SORT1_top_TF": "TFAP2E",
+  "SORT1_dLLR": -15.37,
+  "PHACTR1_top_TF": "MEF2B",
+  "PHACTR1_dLLR": -13.7
+}

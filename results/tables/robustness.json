@@ -1,0 +1,62 @@
+{
+  "conservation_AUC_CI": [
+    0.564,
+    0.683,
+    0.792
+  ],
+  "rarity_AUC_CI": [
+    0.162,
+    0.282,
+    0.402
+  ],
+  "reliability_weight_CI": {
+    "motif_motif_disruption": [
+      0.0,
+      0.006,
+      0.092
+    ],
+    "phylop_max": [
+      0.275,
+      0.398,
+      0.544
+    ],
+    "phastcons470": [
+      0.382,
+      0.55,
+      0.687
+    ],
+    "ccre_enhancer": [
+      0.0,
+      0.005,
+      0.042
+    ],
+    "splice_delta": [
+      0.001,
+      0.019,
+      0.062
+    ]
+  },
+  "phyloP_weight_obs": 0.615,
+  "phyloP_weight_perm_p": 0.0133,
+  "gene_precision_at_full_coverage": 0.846,
+  "gene_precision_top70pct_conf": 0.889,
+  "abstained_loci_lowconf": [
+    {
+      "locus": "CDKN2A_CDKN2B",
+      "conf": 0.5609035491943359,
+      "hit": 1
+    },
+    {
+      "locus": "DUSP8_HCCA2",
+      "conf": 0.1582270264625549,
+      "hit": 0
+    }
+  ],
+  "ensemble_AUROC": {
+    "conservation": 0.648,
+    "motif": 0.492,
+    "L2G": 0.569,
+    "naive ensemble": 0.592,
+    "reliability-wtd": 0.538
+  }
+}

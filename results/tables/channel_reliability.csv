@@ -1,0 +1,6 @@
+channel,dprime,weight
+phylop_max,0.795,0.615
+phastcons470,0.528,0.272
+motif_motif_disruption,0.27,0.071
+splice_delta,-0.204,0.04
+ccre_enhancer,0.043,0.002

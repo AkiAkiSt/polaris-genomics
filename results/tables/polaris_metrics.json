@@ -1,0 +1,116 @@
+{
+  "channel_discrimination": {
+    "phylop_max": {
+      "auc": 0.682,
+      "p": 0.010675179333175362,
+      "hi": 2.151,
+      "lo": 1.286
+    },
+    "phylop": {
+      "auc": 0.63,
+      "p": 0.06793058863628003,
+      "hi": -0.018,
+      "lo": -0.508
+    },
+    "phastcons470": {
+      "auc": 0.514,
+      "p": 0.7979539574878118,
+      "hi": 0.063,
+      "lo": 0.057
+    },
+    "phastcons": {
+      "auc": 0.499,
+      "p": 0.9908227252298281,
+      "hi": 0.112,
+      "lo": 0.044
+    },
+    "motif_motif_disruption": {
+      "auc": 0.553,
+      "p": 0.4564634620080368,
+      "hi": 12.428,
+      "lo": 11.663
+    },
+    "ccre_enhancer": {
+      "auc": 0.472,
+      "p": 0.6403357361983828,
+      "hi": 0.294,
+      "lo": 0.349
+    },
+    "splice_delta": {
+      "auc": 0.447,
+      "p": 0.43022382416341653,
+      "hi": 0.379,
+      "lo": 0.932
+    },
+    "rarity": {
+      "auc": 0.283,
+      "p": 0.002324678574186844,
+      "hi": 0.49,
+      "lo": 0.732
+    }
+  },
+  "n_finemapped_pos": 17,
+  "n_passenger_neg": 478,
+  "finding_conservation_enrichment": {
+    "auc": 0.682,
+    "p": 0.010675179333175362,
+    "hi": 2.151,
+    "lo": 1.286
+  },
+  "finding_rarity_inversion": {
+    "auc": 0.283,
+    "p": 0.002324678574186844,
+    "hi": 0.49,
+    "lo": 0.732
+  },
+  "em_reliability": {
+    "phylop_max": {
+      "dprime": 0.795,
+      "weight": 0.615
+    },
+    "phastcons470": {
+      "dprime": 0.528,
+      "weight": 0.272
+    },
+    "motif_motif_disruption": {
+      "dprime": 0.27,
+      "weight": 0.071
+    },
+    "splice_delta": {
+      "dprime": -0.204,
+      "weight": 0.04
+    },
+    "ccre_enhancer": {
+      "dprime": 0.043,
+      "weight": 0.002
+    }
+  },
+  "molecular_recovers_finemap_AUROC_locusCV": 0.5929116416441054,
+  "calib_brier": 0.0338,
+  "calib_ece": 0.0045,
+  "gene_top1_naive_L2G+distance_combo": 0.692,
+  "gene_top1_nearest": 0.692,
+  "gene_top1_distance": 0.692,
+  "gene_top1_POLARIS(=L2G)": 0.846,
+  "n_control_loci_geneeval": 13,
+  "oracle_spectrum": {
+    "evals": [
+      2.139,
+      1.349,
+      1.072,
+      0.949,
+      0.682,
+      0.561,
+      0.248
+    ],
+    "gamma": 0.0131,
+    "mp_hi": 1.242,
+    "n_signal_dims": 2,
+    "n_channels": 7
+  },
+  "diffusion_spectral_gap": 0.0,
+  "topN_with_transparent_mechanism": 29,
+  "FTO_rs1421085_top_disrupted_TF": "Arid5a",
+  "FTO_rs1421085_dLLR": -8.63,
+  "FTO_rs1421085_distal_flag": 1
+}
