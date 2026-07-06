@@ -217,8 +217,8 @@ def main():
     dump("meta.json", meta)
 
     # ---- reliability (weights + CIs + perm p), both diseases ----
-    labels = {"motif_motif_disruption": "TF motif disruption", "phylop_max": "conservation (phyloP)",
-              "phastcons470": "conservation (phastCons470)", "ccre_enhancer": "enhancer (cCRE)",
+    labels = {"motif_motif_disruption": "TF motif disruption", "phylop_max": "phyloP conservation",
+              "phastcons470": "phastCons (470-way)", "ccre_enhancer": "enhancer cCRE",
               "splice_delta": "cryptic splice"}
     ci = rob["reliability_weight_CI"]
     rel = dict(perm_p=rob["phyloP_weight_perm_p"], channels=[

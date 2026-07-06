@@ -1,5 +1,5 @@
 // POLARIS — shared utilities. d3 is a global (loaded via CDN before this module).
-export const V = 'r2-3';                       // bump when data/JSON change (cache-bust)
+export const V = 'r2-5';                       // bump when data/JSON change (cache-bust)
 export const C = {
   navy:'#0b1f3a', ink:'#12263f', slate:'#5b6b7b', mute:'#8595a4',
   teal:'#1f9e89', tealD:'#137a68', amber:'#e08a00', amberL:'#f0a202',
@@ -55,6 +55,13 @@ export function navScroll(){
     links.forEach(a=>a.classList.toggle('active', a.getAttribute('href')==='#'+cur));
   };
   addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  // mobile menu toggle
+  const tog = document.getElementById('navToggle');
+  if(tog){
+    tog.addEventListener('click', ()=>{ const open = nav.classList.toggle('open');
+      tog.setAttribute('aria-expanded', open); tog.textContent = open ? '✕' : '☰'; });
+    links.forEach(a=>a.addEventListener('click', ()=>{ nav.classList.remove('open'); tog.textContent='☰'; tog.setAttribute('aria-expanded','false'); }));
+  }
 }
 
 // tiny Gaussian KDE for smooth distribution curves

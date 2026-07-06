@@ -18,7 +18,7 @@ async function boot(){
   renderExplorer(DATA);
   renderFto(DATA.fto);
   renderGeneralization(DATA);
-  addEventListener('resize', debounce(()=>{ renderStaticCharts(); renderGeneralization(DATA); }, 200));
+  addEventListener('resize', debounce(()=>{ renderStaticCharts(); renderGeneralization(DATA); renderFto(DATA.fto); }, 220));
 }
 
 function renderHero(meta){
@@ -59,8 +59,9 @@ function heroSky(){
       tw:Math.random()*Math.PI*2, sp:.4+Math.random()*.8, vx:(Math.random()-.5)*.04*dpr}));
     polaris={x:W*(0.6+Math.random()*0.25), y:H*(0.28+Math.random()*0.3), r:2.6*dpr};
   }
-  let t=0, tri=null, triT=0;
+  let t=0, tri=null, triT=0, raf=null, visible=true;
   function frame(){
+    if(!visible){ raf=null; return; }
     t+=0.016; ctx.clearRect(0,0,W,H);
     // triangulation event every ~6s
     if(!tri && Math.random()<0.006){ const pick=()=>stars[Math.floor(Math.random()*stars.length)];
@@ -77,9 +78,12 @@ function heroSky(){
     gl.addColorStop(0,'rgba(127,216,200,.9)'); gl.addColorStop(1,'rgba(127,216,200,0)');
     ctx.fillStyle=gl; ctx.beginPath(); ctx.arc(polaris.x,polaris.y,26*dpr,0,7); ctx.fill();
     ctx.fillStyle='#eafaf6'; ctx.beginPath(); ctx.arc(polaris.x,polaris.y,polaris.r,0,7); ctx.fill();
-    requestAnimationFrame(frame);
+    raf=requestAnimationFrame(frame);
   }
-  size(); addEventListener('resize', debounce(size,200)); requestAnimationFrame(frame);
+  size(); addEventListener('resize', debounce(size,200));
+  new IntersectionObserver(([e])=>{ visible=e.isIntersecting; if(visible && !raf) raf=requestAnimationFrame(frame); })
+    .observe(cv);
+  raf=requestAnimationFrame(frame);
 }
 
 boot();

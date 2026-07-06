@@ -68,7 +68,7 @@ export function calibCurve(sel, cal){
   const line=d3.line().x(p=>x(p.pred)).y(p=>y(p.obs)).curve(d3.curveMonotoneX);
   F.g.append('path').datum(pts).attr('d',line).attr('fill','none').attr('stroke',C.teal).attr('stroke-width',2.6);
   F.g.selectAll('circle').data(pts).join('circle').attr('cx',p=>x(p.pred)).attr('cy',p=>y(p.obs))
-    .attr('r',p=>4+Math.sqrt(p.n)).attr('fill',C.teal).attr('opacity',.85)
+    .attr('r',p=>Math.min(4+Math.sqrt(p.n),12)).attr('fill',C.teal).attr('opacity',.82)
     .on('mousemove',(e,p)=>tip(`predicted <b>${pct(p.pred)}</b> → observed <b>${pct(p.obs)}</b><br>${p.n} variants`,e)).on('mouseleave',untip);
   F.g.append('text').attr('x',F.iw).attr('y',F.ih-6).attr('text-anchor','end').attr('font-size',10.5).attr('fill',C.mute).text('perfect calibration = diagonal');
   F.g.append('text').attr('x',F.iw/2).attr('y',F.ih+32).attr('text-anchor','middle').attr('font-size',11).attr('fill',C.slate).text('predicted P(causal)');
