@@ -240,3 +240,20 @@ svg text{font-family:var(--sans)}
 .concl{margin-top:1rem;background:rgba(240,162,2,.1);border:1px solid rgba(240,162,2,.35);border-radius:11px;
   padding:.7rem .9rem;color:#f7e6c8;font-size:.88rem}
 .concl b{color:#ffd98a}
+
+/* ============ generalization ============ */
+.repro{text-align:center;padding:1.2rem 1rem}
+.repro .rlabel{font-size:.82rem;color:var(--slate);font-weight:600;text-transform:uppercase;letter-spacing:.04em;min-height:2.2em}
+.repro .rvals{display:flex;align-items:center;justify-content:center;gap:.7rem;margin:.7rem 0}
+.repro .rv{display:flex;flex-direction:column;align-items:center}
+.repro .rv b{font-family:var(--serif);font-size:1.9rem;font-weight:600;color:var(--navy);line-height:1}
+.repro .rv.cad b{color:var(--amber)}
+.repro .rv i{font-size:.68rem;color:var(--slate);font-style:normal;text-transform:uppercase;letter-spacing:.05em}
+.repro .arrow{color:var(--line2);font-size:1.3rem}
+.mechrow{display:flex;align-items:center;gap:.7rem;padding:.55rem 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.mechrow:last-child{border-bottom:0}
+.mechrow .dchip{font-size:.66rem;font-weight:700;padding:.15rem .45rem;border-radius:20px;flex:0 0 auto}
+.mechrow .dchip.t2d{background:rgba(11,31,58,.09);color:var(--navy)}
+.mechrow .dchip.cad{background:rgba(224,138,0,.13);color:var(--amber)}
+.mechrow .gene{font-weight:700;color:var(--navy)}
+.mechrow .tf{margin-left:auto;font-family:ui-monospace,monospace;font-size:.82rem;color:var(--teal-d);font-weight:600}
