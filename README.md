@@ -1,6 +1,11 @@
 # POLARIS
 ### Posterior-calibrated, Latent-truth Attribution of Regulatory-variant Influence and target-gene Selection
 
+### 🔭 **Live interactive site → https://akiakist.github.io/polaris-genomics/**
+An interactive, self-teaching explorer of the real results (829 variants, two diseases) with the honesty
+layer front-and-centre — transparent confidence, visible "uncertain" flags, and disagreements shown, not
+hidden. Screenshots in [`docs/screenshots/`](docs/screenshots/).
+
 **Broad question (Candidate A from the proposal):** *How can we understand the function of non-coding DNA
 variants to predict whether they may cause disease?* → For a single complex disease, convert its non-coding
 GWAS loci into **ranked, mechanistically-annotated causal-variant → target-gene hypotheses.**
